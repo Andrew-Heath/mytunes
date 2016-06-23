@@ -4,8 +4,8 @@ describe('Songs', function() {
 
     beforeEach(function() {
       requests = [];
-      xhr = sinon.useFakeXMLHttpRequest();
-      xhr.onCreate = function(request) {
+      hr = sinon.useFakeXMLHttpRequest();
+      hr.onCreate = function(request) {
         requests.push(request);
       };
 
