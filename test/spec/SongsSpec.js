@@ -1,6 +1,6 @@
 describe('Songs', function() {
-  xdescribe('when fetching song data from Parse', function() {
-    var songs, fakeSongData, fakeResponse, xhr, requests;
+  describe('when fetching song data from Parse', function() {
+    var songs, fakeSongData, fakeResponse, hr, requests;
 
     beforeEach(function() {
       requests = [];
@@ -26,7 +26,7 @@ describe('Songs', function() {
     });
 
     afterEach(function() {
-      xhr.restore();
+      hr.restore();
     });
 
     it('should GET song data from Parse when initialized', function() {

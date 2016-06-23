@@ -6,7 +6,6 @@ var SongQueueView = Backbone.View.extend({
       this.render();
     }, this);
     this.options.on('enqueue', function() {
-      console.log('enqueue listener', this);
       this.render();
     }, this);
     this.options.on('remove', this.render, this);
