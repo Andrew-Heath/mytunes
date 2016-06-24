@@ -2,6 +2,7 @@
 var SongQueue = Backbone.Collection.extend({
 
   model: SongModel,
+  name: 'Song Queue',
 
   initialize: function() {
     this.on('add', function(song) {
