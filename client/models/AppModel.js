@@ -24,7 +24,7 @@ var AppModel = Backbone.Model.extend({
 
     this.createPlaylist.on('playlist', function(args) {
       var newQueue = args + 'Queue';
-      this[newQueue] = new SongQueue();
+      this.set(newQueue, new SongQueue());
       this.trigger('playlistView', args);
     }, this);
   }
